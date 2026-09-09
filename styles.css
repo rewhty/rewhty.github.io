@@ -22,10 +22,10 @@ p {
 }
 
 .left img {
-    width: 300px;
+    width: 100px;
     border-radius: 10px;
 }
 
 .right {
-    max-width: 600px;
+    max-width: 400px;
 }
