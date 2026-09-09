@@ -1,14 +1,31 @@
-h1 {
-font-family: 'Courier New', monospace;
-font-size: 40px;
-color: #333333;
-letter-spacing: 2px;
-text-transform: uppercase;
+body {
+    background-color: gray;
 }
 
-body {
-background-color: gray;
+h1 {
+    font-family: 'Courier New', monospace;
+    font-size: 40px;
+    color: #333333;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-align: center;
 }
 
 p {
-font-family: 'Courier New', monospace;
+    font-family: 'Courier New', monospace;
+}
+
+.content {
+    display: flex;
+    align-items: flex-start;
+    gap: 30px;
+}
+
+.left img {
+    width: 300px;
+    border-radius: 10px;
+}
+
+.right {
+    max-width: 600px;
+}
