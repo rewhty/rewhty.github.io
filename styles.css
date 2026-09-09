@@ -9,3 +9,6 @@ text-transform: uppercase;
 body {
 background-color: gray;
 }
+
+p {
+font-family: 'Courier New', monospace;
