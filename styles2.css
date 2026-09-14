@@ -1,13 +1,17 @@
-/* General page styling */
 body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 20px;
   background-color: #f4f4f4;
   color: #333;
+
+
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
-/* Navigation */
+
 nav {
   display: inline-block;
   margin-right: 15px;
@@ -20,38 +24,28 @@ nav {
 /* Heading */
 h1 {
   text-align: center;
-  color: #222;
-  margin-top: 20px;
 }
 
-/* Main paragraph */
-p {
-  background-color: white;
+
+p,
+article {
+  background: white;
   padding: 15px;
   border-radius: 5px;
   line-height: 1.6;
 }
 
-/* Aside section */
 aside {
-  background-color: #e8e8e8;
+  background: #e8e8e8;
   padding: 15px;
   margin: 20px 0;
   border-left: 4px solid #333;
   border-radius: 5px;
 }
 
-/* Article section */
-article {
-  background-color: white;
-  padding: 15px;
-  border-radius: 5px;
-  line-height: 1.6;
-  margin-bottom: 20px;
-}
 
-/* Footer */
 footer {
+  margin-top: auto;
   text-align: center;
   background-color: #333;
   color: white;
