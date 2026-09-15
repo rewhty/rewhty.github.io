@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="dicestyles.css">
+    </head>
+    <body>
+        <h1>Roll Dice</h1>
+
+        DICE ROLL 4: <input type="text" id="dice2" value="1">
+        <button onclick="RollDice4()"><image src="dice4.png" width = 50 height = 50></image></button>
+        <br>
+        <br>
+        DICE ROLL 6: <input type="text" id="dice1" value="1">
+        <button onclick="RollDice6()"><image src="die.png" width = 50 height = 50></image></button>
+        <br>
+        <br>
+        DICE ROLL 10: <input type="text" id="dice3" value="1">
+        <button onclick="RollDice10()"><image src="d10-removebg-preview.png" width = 50 height = 50></image></button>
+
+        <script>
+            function RollDice6()
+            {
+                var dice1 = Math.floor( (Math.random() * 6) + 1);
+                document.getElementById("dice1").value=dice1;
+            }
+
+            function RollDice4()
+            {
+                var dice2 = Math.floor( (Math.random() * 4) + 1);
+                document.getElementById("dice2").value=dice2;
+            }
+
+            function RollDice10()
+            {
+                var dice3 = Math.floor( (Math.random() * 10) + 1);
+                document.getElementById("dice3").value=dice3;
+            }
+        </script>
+    </body>
+</html>
