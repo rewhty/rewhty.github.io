@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            function validateForm()
+            {
+                var firstname = document.forms["form1"]["firstname"].value;
+                var lastname = document.forms["form1"]["lastname"].value;
+                var password1 = document.forms["form1"]["password1"].value;
+                var password2 = document.forms["form1"]["password2"].value;
+                var email = document.forms["form1"]["email"].value;
+                var foundat = 0;
+                var founddot = 0;
+
+                if(firstname==null || firstname=="")
+                {
+                    alert("name must be filled in")
+                    return false;
+                }
+
+                
+
+                if(lastname==null || lastname=="")
+                {
+                    alert("name must be filled in")
+                    return false;
+                }
+
+                
+                if(password1!=password2 || password1=="")
+                {
+                    alert("passwords do not match")
+                    return false;
+                }
+                
+
+                for (i=0;i<email.length;i++)
+                {
+                    if(email[i]=='@'){foundat = i;}
+                    if(email[i]=='.'){founddot = i;}
+                }
+
+                if (foundat>1 && founddot > foundat + 3 && founddot < email.length-2)
+                {
+                    return true;
+                }
+                else
+                {
+                    alert("invalid email");
+                    return false;
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <h1>Form Validation</h1>
+        <form name="form1" action="confirmation.html" onsubmit="return validateForm()">
+            First name: <input type="text" name="firstname" value=""><br><br>
+            Last name: <input type="text" name="lastname" value=""><br><br>
+            Email: <input type="text" name="email" value=""><br><br>
+            Password: <input type="password" name="password1" value=""><br><br>
+            Repeat password: <input type="password" name="password2" value=""><br><br>
+            <input type="submit" value="Submit">
+        </form>
+    </body>
+</html>
